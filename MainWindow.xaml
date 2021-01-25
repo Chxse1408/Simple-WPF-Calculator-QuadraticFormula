@@ -1,0 +1,135 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Quadratic Formula Calculator"
+        Height="400"
+        Width="545"
+        Background="Beige">
+
+    <Grid
+        Margin="10,10,10,10"
+        Background="SlateGray">
+        <Label
+            x:Name="Label_Title"
+            Content="Solve a Quadratic Function"
+            FontWeight="Bold"
+            FontSize="30"
+            HorizontalAlignment="Left"
+            Margin="14,14,0,0"
+            VerticalAlignment="Top" />
+        <Grid
+            HorizontalAlignment="Left"
+            Height="270"
+            Margin="14,69,0,0"
+            VerticalAlignment="Top"
+            Width="388">
+            <StackPanel
+                Height="90"
+                Width="343"
+                Margin="0,140,0,0">
+                <Button
+                x:Name="Button_Calculate"
+                Content="Calculate"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                Margin="20,25,0,0"
+                VerticalAlignment="Center"
+                Width="110"
+                Height="43"
+                Click="Button_Calculate_Click" />
+                <Label
+                x:Name="Label_Calculation"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                HorizontalContentAlignment="Left"
+                VerticalContentAlignment="Top"
+                Margin="0,-42,30,0"
+                BorderThickness="1.3"
+                BorderBrush="Black"
+                Background="White"
+                Height="43"
+                Width="120" />
+            </StackPanel>
+            <StackPanel
+                Margin="16,25,29,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Height="120"
+                Width="343">
+                <Label
+                x:Name="Label_aCoefficient"
+                Content="a coefficient:"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                Margin="40,5,0,0"
+                VerticalAlignment="Top" />
+                <Label
+                x:Name="Label_bCoefficient"
+                Content="b coefficient:"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                Margin="39,0,0,0"
+                VerticalAlignment="Top" />
+                <Label
+                x:Name="Label_cCoefficient"
+                Content="c coefficient:"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                Margin="40,0,0,0"
+                VerticalAlignment="Top" />
+                <TextBox
+                x:Name="TextBox_aCoefficient"
+                HorizontalAlignment="Left"
+                Height="23"
+                Margin="186,-103,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="120" />
+                <TextBox
+                x:Name="TextBox_bCoefficient"
+                HorizontalAlignment="Left"
+                Height="23"
+                Margin="186,-67,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="120" />
+                <TextBox
+                x:Name="TextBox_cCoefficient"
+                HorizontalAlignment="Left"
+                Height="23"
+                Margin="186,-30,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="120" />
+            </StackPanel>
+        </Grid>
+        <StackPanel>
+            <Image
+                Source="images/quadratic funtin.png"
+                Height="99"
+                Margin="400,60,14,0" />
+            <Button
+                x:Name="Button_help"
+                Content="Help"
+                HorizontalAlignment="Left"
+                Height="58"
+                Margin="402,10,0,0"
+                VerticalAlignment="Top"
+                Width="98"
+                FontWeight="Bold"
+                Click="Button_Help" />
+            <Button
+                x:Name="Button_clear"
+                FontWeight="Bold"
+                Content="Clear "
+                HorizontalAlignment="Left"
+                Height="58"
+                Margin="402,30,0,0"
+                Width="98"
+                Click="Button_clear_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
